@@ -32,17 +32,17 @@ const jsonAttributes = (data) => {
             <div class="none ">
             <button><img src="images/sound.png"></button>
             </div>
-            <h1>${convertToCelsius(data.main.temp)}º c</h1>
+            <h1>${convertToCelsius(data.main.temp)}º C</h1>
             <h2>sensação de ${convertToCelsius(data.main.feels_like)}º C</h2>
             <p>${data.weather[0].description}</p>
             <img class="w-icon" src="https://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="Weather icon">
         </section>
         <section class="informations blur">
             <div class="info-box">
-                <p>Temperatura Máxima</p><span>${convertToCelsius(data.main.temp_max)}º c</span>
+                <p>Temperatura Máxima</p><span>${convertToCelsius(data.main.temp_max)}º C</span>
             </div>
             <div class="info-box">
-                <p>Temperatura Mínima</p><span>${convertToCelsius(data.main.temp_min)}º c</span>
+                <p>Temperatura Mínima</p><span>${convertToCelsius(data.main.temp_min)}º C</span>
             </div>
             <div class="info-box">
                 <p>Nascer do sol</p><span>${convertUnix(data.sys.sunrise)}</span>
