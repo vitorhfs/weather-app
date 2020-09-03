@@ -29,7 +29,7 @@ const jsonAttributes = (data) => {
 
     const html = `
         <section class="main-container blur">
-            <div class="none">
+            <div class="none ">
             <button><img src="images/sound.png"></button>
             </div>
             <h1>${convertToCelsius(data.main.temp)}º c</h1>
