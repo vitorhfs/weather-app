@@ -83,19 +83,19 @@ body {
 
 .main-container p {
   margin: 0;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 700;
 }
 
 .main-container h1 {
   margin: 0;
-  font-size: 160px;
+  font-size: 120px;
   font-weight: 700;
 }
 
 .main-container h2 {
   margin: 0;
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 700;
 }
 
