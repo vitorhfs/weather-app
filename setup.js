@@ -1,4 +1,4 @@
-const linkUrl = `http://api.openweathermap.org/data/2.5/weather?q=curitiba&appid=9d12ad16f1977f8d849595f48d5ac394&lang=pt_br`;
+const linkUrl = `https://api.openweathermap.org/data/2.5/weather?q=curitiba&appid=9d12ad16f1977f8d849595f48d5ac394&lang=pt_br`;
 
 fetch(linkUrl)
     .then((data) => data.json())
@@ -35,7 +35,7 @@ const jsonAttributes = (data) => {
             <h1>${convertToCelsius(data.main.temp)}º c</h1>
             <h2>sensação de ${convertToCelsius(data.main.feels_like)}º C</h2>
             <p>${data.weather[0].description}</p>
-            <img class="w-icon" src="http://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="Weather icon">
+            <img class="w-icon" src="https://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="Weather icon">
         </section>
         <section class="informations blur">
             <div class="info-box">
