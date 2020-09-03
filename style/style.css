@@ -2,6 +2,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   background-color: #6b6b6b;
   margin: auto;
   -webkit-box-pack: center;
@@ -20,7 +21,7 @@ body {
       grid-template-rows: 100vh 1fr;
   background-color: #d3aeae;
   color: #ececec;
-  width: 60vh;
+  width: 80vh;
   border-radius: 3px;
   -webkit-box-shadow: inset 0 0 4px #000000;
           box-shadow: inset 0 0 4px #000000;
@@ -105,17 +106,18 @@ body {
   max-width: 100px;
 }
 
-.informations {
+.information {
   display: -ms-grid;
   display: grid;
+  margin-bottom: 50px;
 }
 
-.informations p {
+.information p {
   margin: 10px 0px 10px 20px;
   width: 60%;
 }
 
-.informations span {
+.information span {
   height: 30px;
   margin: 10px;
 }
@@ -145,12 +147,39 @@ body {
           backdrop-filter: blur(2px);
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left bottom, left top, from(#666666), to(#5a5a5a));
+  background: linear-gradient(0deg, #666666 0%, #5a5a5a 100%);
+  background-color: #414141;
+  width: 80vh;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  color: silver;
+}
+
 @media (max-width: 768px) {
   .weather-container {
     width: 100vh;
     -webkit-box-shadow: none;
             box-shadow: none;
     border-radius: none;
+  }
+  footer {
+    width: 100vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

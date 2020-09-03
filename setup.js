@@ -37,7 +37,7 @@ const jsonAttributes = (data) => {
             <p>${data.weather[0].description}</p>
             <img class="w-icon" src="https://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="Weather icon">
         </section>
-        <section class="informations blur">
+        <section class="information blur">
             <div class="info-box">
                 <p>Temperatura Máxima</p><span>${convertToCelsius(data.main.temp_max)}ºC</span>
             </div>
